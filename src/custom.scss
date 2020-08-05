@@ -1,19 +1,58 @@
-/***************** Base ***********************************/
-@media only screen and (max-width: 900px){
-  .container{
+/***************** Variables ******************************/
+$light-slate: #e3e7ea;
+$dark-blue: #152238;
 
+/***************** Base ***********************************/
+.section-div{
+  margin: auto;
+  padding: 20px 20px;
+  @media only screen and (min-width: 600px){
+    max-width: 600px;
   }
+  @media only screen and (min-width: 900px){
+    max-width: 900px;
+  }
+  @media only screen and (min-width: 1200px){
+    max-width: 1200px;
+  }
+}
+
+#root{
+  background-color: white;
 }
 
 /***************** Components ****************************/
 
-.intro{
+.intro-container{
   .intro-header{
     text-align: center;
     margin: 0px auto;
+    padding: 10px 0px;
   }
   img{
     max-width: 100%;
+  }
+}
+
+.skills-container{
+  background-color: $light-slate;
+  .skills-badges div{
+    text-align: center;
+  }
+  .badge{
+    width: 200px;
+    margin: 10px auto;
+    padding: 0px;
+    border: 2px solid black;
+    h3{
+      background-color: $dark-blue;
+      color: white;
+      padding-bottom: 5px;
+    }
+    img{
+      width: 40%;
+      margin: 10px auto;
+    }
   }
 }
 

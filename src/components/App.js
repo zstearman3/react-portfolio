@@ -1,10 +1,12 @@
 import React from 'react';
 import Intro from './Intro';
+import Skills from './Skills';
 
 function App() {
   return (
-    <div className="App container">
+    <div className="App">
       <Intro />
+      <Skills />
     </div>
   );
 }
