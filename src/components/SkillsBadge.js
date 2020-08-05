@@ -7,7 +7,7 @@ class SkillsBadge extends Component {
         <div className="badge">
           <h3>{this.props.skill}</h3>
           <div className="col-12">
-            <img src={this.props.img}></img>
+            {this.props.img}
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@ import introImage from '../assets/home_family_pic_wide.jpg';
 
 class Intro extends Component {
   render() {
+
     return (
       <div className="intro-container">
         <div className="section-div">

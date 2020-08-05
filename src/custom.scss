@@ -40,7 +40,10 @@ $dark-blue: #152238;
     text-align: center;
   }
   .badge{
-    width: 200px;
+    width: 150px;
+    @media only screen and (min-width: 600px){
+      width: 200px;
+    }
     margin: 10px auto;
     padding: 0px;
     border: 2px solid black;
@@ -49,9 +52,12 @@ $dark-blue: #152238;
       color: white;
       padding-bottom: 5px;
     }
-    img{
+    svg{
       width: 40%;
       margin: 10px auto;
+      path{
+        fill: $dark-blue;
+      }
     }
   }
 }
